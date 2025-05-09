@@ -1,0 +1,566 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EDEDED;
+}
+
+#technical-skills,
+#projects,
+#certifications {
+    margin: 90px auto 10px auto;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.205), 0 -2px 2px rgba(0, 0, 0, 0.205);
+}
+
+#technical-skills .background,
+#projects .background,
+#certifications .background {
+    max-width: 1289px;
+    margin: auto;
+    padding: 41px 0 51px 0;
+}
+
+#technical-skills .background .container-fluid h2,
+#projects .background .container-fluid h2,
+#certifications .background .container-fluid h2 {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+/* Sobre mim */
+#about-me {
+    max-width: 1289px;
+    margin: 218px auto 106px auto;
+}
+
+#about-me .container-fluid {
+    display: flex;
+}
+
+#about-me .container-fluid .left-content {
+    display: flex;
+    max-width: 722px;
+    align-items: center;
+}
+
+#about-me .container-fluid .left-content article h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#about-me .container-fluid .left-content article p {
+    margin: 0;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-me .container-fluid .left-content article p a {
+    color: #467e54;
+    text-decoration: none;
+}
+
+#about-me .container-fluid .left-content article p a:hover {
+    border-bottom: 1px solid #5DA36F;
+}
+
+#about-me .container-fluid .left-content article p:nth-child(2) {
+    padding: 0;
+    margin-bottom: 6px;
+    color: #437B51;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#about-me .container-fluid .left-content article p:nth-child(3),
+#about-me .container-fluid .left-content article p:nth-child(4) {
+    margin-bottom: 8px;
+}
+
+#about-me .container-fluid .left-content article p:nth-child(5) {
+    margin-bottom: 16px;
+}
+
+#about-me .container-fluid .left-content article p .social:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#about-me .container-fluid .left-content article p .social i {
+    padding: 5px 8px;
+    border: 2px solid;
+    border-radius: 6px;
+    font-size: 34px;
+    background-color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-me .container-fluid .left-content article p .social:hover i {
+    color: #0e3617;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 1px 1px #053f136e, 0 -1px 1px #053f136e;
+}
+
+#about-me .container-fluid .right-content {
+    position: relative;
+    width: 402px;
+    height: 406px;
+    margin-left: auto;
+    animation: float 2s ease-in-out infinite;
+}
+
+#about-me .container-fluid .right-content a img {
+    width: 100%;
+    height: 100%;
+    border: 10px double #5DA36F;
+    border-radius: 500px;
+}
+
+#about-me .container-fluid .right-content a #green-circle {
+    position: absolute;
+    width: 73px;
+    height: 71px;
+    bottom: 28px;
+    right: 20px;
+    border: 6px solid #EDEDED;
+    border-radius: 50%;
+    background-color: #37C898;
+}
+
+/* Habilidades técnicas */
+#technical-skills .background .container-fluid p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+#technical-skills .background .container-fluid p b {
+    color: #408D53;
+}
+
+#technical-skills .background .container-fluid #tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 38px 0;
+    margin-top: 30px;
+    border: 2px solid #A6CFB0;
+    border-radius: 10px;
+    background-color: #CDE5D3;
+}
+
+#technical-skills .background .container-fluid #tags .tag {
+    display: flex;
+    width: 9.2%;
+    height: 110px;
+    padding: 0;
+    margin: 8px;
+    fill: #1A1A1A;
+    border-radius: 10px;
+    box-shadow:
+        #408D53 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, fill 0.3s ease;
+}
+
+#technical-skills .background .container-fluid #tags .tag:hover {
+    fill: #000000;
+    box-shadow:
+        #408D53 0px 0px 0px 3px,
+        rgba(6, 24, 44, 0.8) 0px 8px 12px -2px,
+        rgba(255, 255, 255, 0.1) 0px 2px 2px inset;
+    transform: scale(1.02);
+}
+
+#technical-skills .background .container-fluid #tags .tag svg {
+    height: 90px;
+    margin: auto;
+}
+
+#technical-skills .background .container-fluid #tags .tag-1 {
+    background-color: #5DA36F;
+}
+
+#technical-skills .background .container-fluid #tags .tag-2 {
+    background-color: #A2D5AC;
+}
+
+/* Projetos */
+#projects .background .container-fluid #search {
+    display: flex;
+}
+
+#projects .background .container-fluid #search #search-input,
+#projects .background .container-fluid #search #category-select {
+    color: #667080;
+    border: 1px solid #A8A8A8;
+}
+
+#projects .background .container-fluid #search #category-select {
+    max-width: 230px;
+    margin-left: 12px;
+}
+
+#projects .background .container-fluid #projects-content {
+    max-height: 1000px;
+    padding: 16px;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    border: 1px solid #A8A8A8;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #EDEDED;
+}
+
+#projects .background .container-fluid #projects-content .project {
+    display: flex;
+    padding: 35px;
+    margin-bottom: 10px;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content {
+    width: 45%;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content article h2 {
+    font-style: normal;
+    text-align: left;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content article h2,
+#projects .background .container-fluid #projects-content .project .left-content article p {
+    margin: 0;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content article p:nth-child(2) {
+    padding: 0;
+    color: #437B51;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content article p:nth-child(3) {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-tags,
+#projects .background .container-fluid #projects-content .project .left-content .project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px 0;
+    margin-top: 16px;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-tags div {
+    padding: 10px 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    border: 1px solid;
+    border-radius: 18px;
+    font-weight: bold;
+    color: #EDEDED;
+    background-color: #5DA36F;
+    box-shadow:
+        #408D53 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: box-shadow 0.3s ease;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-tags div:hover {
+    box-shadow:
+        #408D53 0px 0px 0px 3px,
+        rgba(6, 24, 44, 0.8) 0px 8px 12px -2px,
+        rgba(255, 255, 255, 0.1) 0px 2px 2px inset;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-buttons a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-buttons button {
+    height: 100%;
+    padding: 10px 12px;
+    font-weight: bold;
+    color: #EDEDED;
+    border-radius: 10px;
+    margin-right: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-buttons .button-1 {
+    background-color: #111F14;
+    border: 1px solid #EDEDED;
+    box-shadow:
+        #08110a 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-buttons .button-1:hover {
+    box-shadow:
+        #08110a 0px 0px 0px 3px,
+        rgba(6, 24, 44, 0.8) 0px 8px 12px -2px,
+        rgba(255, 255, 255, 0.1) 0px 2px 2px inset;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-buttons .button-2 {
+    background-color: #520B06;
+    border: 1px solid #EDEDED;
+    box-shadow:
+        #260503 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-buttons .button-2:hover {
+    box-shadow:
+        #260503 0px 0px 0px 3px,
+        rgba(6, 24, 44, 0.8) 0px 8px 12px -2px,
+        rgba(255, 255, 255, 0.1) 0px 2px 2px inset;
+}
+
+#projects .background .container-fluid #projects-content .project .left-content .project-buttons .view {
+    display: none;
+}
+
+#projects .background .container-fluid #projects-content .project .right-content {
+    width: 53%;
+    height: 440px;
+    margin-left: 2%;
+}
+
+#projects .background .container-fluid #projects-content .project .right-content .project-image,
+.modal .modal-dialog .modal-content .modal-body .project-image {
+    width: 100%;
+    padding: 2px;
+    border: 2px dashed #a8a8a8;
+    height: 100%;
+}
+
+/* Certificados */
+#certifications .background .container-fluid #certifications-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#certifications .background .container-fluid #certifications-content .certification {
+    width: 49%;
+    margin-bottom: 14px;
+    padding: 25px;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.205);
+    transition: transform 0.3s ease;
+}
+
+#certifications .background .container-fluid #certifications-content .certification:hover {
+    transform: scale(1.02);
+}
+
+#certifications .background .container-fluid #certifications-content .certification h5 {
+    font-weight: bold;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+#certifications .background .container-fluid #certifications-content .certification p:nth-child(2),
+#certifications .background .container-fluid #certifications-content .certification p:nth-child(3),
+#certifications .background .container-fluid #certifications-content .certification p:nth-child(4) {
+    margin: 0;
+}
+
+#certifications .background .container-fluid #certifications-content .certification p:nth-child(3) {
+    color: #437B51;
+}
+
+/* Animações */
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media screen and (max-width: 1340px) {
+    #about-me,
+    .background {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .tag {
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    #about-me .container-fluid .left-content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #about-me,
+    .background {
+        width: 94%;
+    }
+    
+    #about-me .container-fluid .left-content {
+        width: 58%;
+    }
+
+    #projects .background .container-fluid #projects-content .project .left-content {
+        width: 100%;
+    }
+
+    #projects .background .container-fluid #projects-content .project .left-content .project-buttons .view {
+        display: block;
+    }
+
+    #projects .background .container-fluid #projects-content .project .right-content {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 1100px) {
+    #about-me,
+    .background {
+        width: 96%;
+    }
+    
+    #about-me .container-fluid .left-content {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #about-me,
+    .background {
+        width: 94%;
+    }
+    
+    #about-me .container-fluid .left-content {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #about-me {
+        margin-top: 208px;
+    }
+    
+    #about-me .container-fluid {
+        flex-direction: column-reverse;
+    }
+
+    #about-me .container-fluid .left-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #about-me .container-fluid .right-content {
+        margin: 0 auto 30px auto;
+    }
+
+    #technical-skills .background .container-fluid #tags .tag {
+        width: 16%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #certifications .background .container-fluid #certifications-content .certification {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #technical-skills .background .container-fluid #tags .tag {
+        width: 16.8%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #technical-skills .background .container-fluid #tags .tag {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #technical-skills .background .container-fluid #tags .tag {
+        width: 27%;
+    }
+
+    #projects .background .container-fluid #search {
+        display: block;
+    }
+
+    #projects .background .container-fluid #search #category-select {
+        max-width: none;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    #projects .background .container-fluid #projects-content {
+        padding: 0;
+        border: none;
+    }
+
+    #projects .background .container-fluid #projects-content .project {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    #about-me {
+        margin-top: 238px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #technical-skills .background .container-fluid #tags {
+        padding: 8px 0;
+    }
+
+    #technical-skills .background .container-fluid #tags .tag {
+        margin: 8px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #about-me .container-fluid .right-content {
+        width: 100%;
+        height: auto;
+    }
+
+    #about-me .container-fluid .right-content a #green-circle {
+        width: 18%;
+        height: 18%;
+    }
+    
+    #technical-skills .background .container-fluid #tags .tag {
+        width: 40%;
+    }
+}

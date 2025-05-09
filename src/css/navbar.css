@@ -1,0 +1,116 @@
+.navbar {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.205);
+}
+
+.navbar .container-fluid {
+    max-width: 1289px;
+    padding: 8px 15px;
+}
+
+/* Navbar principal */
+#main-nav {
+    top: 0;
+    height: 78px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+#main-nav .container-fluid .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#main-nav .container-fluid #language-select {
+    max-width: 230px;
+    margin-left: auto;
+    color: #667080;
+    border: 1px solid #a8a8a8;
+}
+
+/* Navbar secundária */
+#sub-nav {
+    top: 78px;
+    height: 58px;
+}
+
+#sub-nav .container-fluid #mobile-nav .navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+#sub-nav .container-fluid #mobile-nav .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    margin-right: 30px;
+    color: #000000;
+    border-bottom: 2px solid #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sub-nav .container-fluid #mobile-nav .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #5DA36F;
+}
+
+/* Responsividade */
+@media screen and (max-width: 991px) {
+    #sub-nav {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #sub-nav .container-fluid {
+        padding: 0;
+    }
+
+    #sub-nav .container-fluid .navbar-toggler {
+        margin: 10px 15px;
+    }
+
+    #sub-nav .container-fluid #mobile-nav .navbar-nav .nav-item:first-of-type {
+        border-top: 1px solid rgb(182, 182, 182);
+    }
+
+    #sub-nav .container-fluid #mobile-nav .navbar-nav .nav-item .nav-link {
+        width: 100%;
+        padding: 18px;
+        border-bottom: 1px solid rgb(182, 182, 182);
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    #main-nav {
+        height: 120px;
+    }
+
+    #main-nav .container-fluid .navbar-brand {
+        width: 100%;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+    
+    #main-nav .container-fluid #language-select {
+        max-width: none;
+        width: 340px;
+        margin: auto;
+    }
+
+    #sub-nav {
+        top: 120px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #main-nav .container-fluid .navbar-brand {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    #main-nav .container-fluid .navbar-brand {
+        font-size: 18px;
+    }
+}
